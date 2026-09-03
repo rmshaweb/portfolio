@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 
@@ -50,6 +51,7 @@ header {
 
 .logo {
     text-decoration: none;
+
     color: #111827;
 
     font-family: 'Playfair Display', serif;
@@ -71,6 +73,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
+
     color: #374151;
 
     font-size: 14px;
@@ -127,9 +130,11 @@ header {
     color: #b08d57;
 
     font-size: 15px;
+
     font-weight: 600;
 
     letter-spacing: 2px;
+
     text-transform: uppercase;
 
     margin-bottom: 15px;
@@ -568,218 +573,68 @@ header {
    PROJECTS SECTION
 ========================= */
 
-.projects-section {
+#projects {
     background: #f5f3ee;
-
-    padding: 100px 25px;
 }
 
 .projects-container {
-    max-width: 1100px;
+    margin-top: 45px;
 
-    margin: auto;
-}
-
-.projects-heading {
-    max-width: 650px;
-
-    margin: 0 auto 55px;
-
-    text-align: center;
-}
-
-.projects-heading h2 {
-    font-family: 'Playfair Display', serif;
-
-    font-size: 45px;
-
-    line-height: 1.2;
-
-    margin-bottom: 18px;
-
-    color: #111827;
-}
-
-.projects-heading h2 span {
-    color: #b08d57;
-}
-
-.projects-heading p:last-child {
-    color: #6b7280;
-
-    font-size: 15px;
-
-    line-height: 1.7;
-}
-
-
-/* =========================
-   PROJECT GRID
-========================= */
-
-.projects-grid {
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
-    gap: 20px;
-
-    align-items: stretch;
+    gap: 25px;
 }
 
-
-/* =========================
-   PROJECT CARD
-========================= */
-
 .project-card {
-    position: relative;
-
     background: #ffffff;
 
-    border: 1px solid #e1ddd5;
+    padding: 30px;
+
+    border: 1px solid #e2ded6;
 
     border-radius: 10px;
 
-    padding: 35px 25px;
+    box-shadow: 0 8px 25px rgba(17, 24, 39, 0.06);
 
-    min-height: 390px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-7px);
 
-    box-shadow: 0 18px 40px rgba(17, 24, 39, 0.10);
+    box-shadow: 0 15px 35px rgba(17, 24, 39, 0.10);
 }
 
-
-/* =========================
-   PROJECT NUMBER
-========================= */
-
-.project-number {
-    font-family: 'Playfair Display', serif;
-
-    font-size: 42px;
-
-    color: #d5b77a;
-
-    margin-bottom: 30px;
-}
-
-
-/* =========================
-   PROJECT CONTENT
-========================= */
-
-.project-content {
-    display: flex;
-
-    flex-direction: column;
-
-    flex: 1;
-}
-
-.project-type {
-    color: #b08d57;
-
-    font-size: 10px;
-
-    font-weight: 700;
-
-    letter-spacing: 1.5px;
-
-    margin-bottom: 10px;
-}
-
-.project-content h3 {
-    font-family: 'Playfair Display', serif;
-
-    font-size: 23px;
-
+.project-card h3 {
     color: #111827;
 
-    margin-bottom: 15px;
+    font-size: 20px;
+
+    margin-bottom: 12px;
 }
 
-.project-content > p:not(.project-type) {
+.project-card p {
     color: #6b7280;
 
     font-size: 14px;
 
-    line-height: 1.7;
-
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
+.project-card a {
+    color: #b08d57;
 
-/* =========================
-   PROJECT TAGS
-========================= */
+    text-decoration: none;
 
-.project-tags {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 7px;
-
-    margin-bottom: auto;
-}
-
-.project-tags span {
-    padding: 6px 10px;
-
-    background: #f5f3ee;
-
-    border: 1px solid #ddd9d0;
-
-    border-radius: 20px;
-
-    color: #374151;
-
-    font-size: 10px;
+    font-size: 14px;
 
     font-weight: 600;
 }
 
-
-/* =========================
-   PROJECT LINK
-========================= */
-
-.project-link {
-    display: inline-block;
-
-    margin-top: 25px;
-
+.project-card a:hover {
     color: #111827;
-
-    text-decoration: none;
-
-    font-size: 13px;
-
-    font-weight: 700;
-
-    transition: color 0.3s ease;
-}
-
-.project-link:hover {
-    color: #b08d57;
-}
-
-.coming-soon {
-    color: #9ca3af;
-
-    cursor: default;
 }
 
 
@@ -787,185 +642,38 @@ header {
    CONTACT SECTION
 ========================= */
 
-.contact-section {
+.contact {
+    text-align: center;
+
     background: #111827;
 
-    color: #ffffff;
-
-    padding: 100px 25px;
-}
-
-.contact-container {
-    max-width: 1100px;
-
-    margin: auto;
-}
-
-.contact-heading {
-    max-width: 650px;
-
-    margin-bottom: 60px;
-}
-
-.contact-heading h2 {
-    font-family: 'Playfair Display', serif;
-
-    font-size: 45px;
-
-    line-height: 1.2;
-
-    margin: 12px 0 18px;
-}
-
-.contact-heading h2 span {
-    color: #d5b77a;
-}
-
-.contact-heading p:last-child {
-    color: #c4c7ce;
-
-    line-height: 1.7;
-
-    font-size: 15px;
-}
-
-
-/* =========================
-   CONTACT CONTENT
-========================= */
-
-.contact-content {
-    display: grid;
-
-    grid-template-columns: 0.8fr 1.2fr;
-
-    gap: 70px;
-
-    align-items: start;
-}
-
-
-/* =========================
-   CONTACT INFO
-========================= */
-
-.contact-info {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 35px;
-}
-
-.contact-item {
-    display: flex;
-
-    gap: 20px;
-
-    padding-bottom: 25px;
-
-    border-bottom: 1px solid rgba(255,255,255,0.12);
-}
-
-.contact-item > span {
-    color: #d5b77a;
-
-    font-size: 12px;
-
-    font-weight: 700;
-}
-
-.contact-item h3 {
-    margin: 0 0 8px;
-
-    font-size: 17px;
-}
-
-.contact-item p {
-    margin: 0;
-
-    color: #bfc3ca;
-
-    font-size: 14px;
-
-    line-height: 1.7;
-}
-
-
-/* =========================
-   CONTACT FORM
-========================= */
-
-.contact-form {
-    background: #ffffff;
-
-    padding: 35px;
+    color: white;
 
     border-radius: 10px;
+
+    margin: 70px auto;
+
+    max-width: 1050px;
 }
 
-.contact-form .form-group {
-    margin-bottom: 22px;
+.contact h2 {
+    color: white;
 }
 
-.contact-form label {
-    display: block;
+.contact > p {
+    color: #d1d5db;
+}
+
+.contact .btn {
+    margin-top: 30px;
+
+    background: #b08d57;
+}
+
+.contact .btn:hover {
+    background: #ffffff;
 
     color: #111827;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    margin-bottom: 8px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-
-    box-sizing: border-box;
-
-    padding: 14px 15px;
-
-    border: 1px solid #ddd9d0;
-
-    border-radius: 5px;
-
-    background: #faf9f6;
-
-    color: #111827;
-
-    font-family: inherit;
-
-    font-size: 14px;
-
-    outline: none;
-
-    transition: border-color 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #b08d57;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-btn {
-    border: none;
-
-    cursor: pointer;
-}
-
-.contact-message {
-    margin-top: 15px;
-
-    font-size: 13px;
-
-    color: #6b7280;
 }
 
 
@@ -987,22 +695,7 @@ footer {
 
 
 /* =========================
-   TABLET
-========================= */
-
-@media (max-width: 900px) {
-
-    /* Projects */
-
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-/* =========================
-   MOBILE
+   MOBILE RESPONSIVE
 ========================= */
 
 @media (max-width: 768px) {
@@ -1081,12 +774,8 @@ footer {
 
     /* Projects */
 
-    .projects-section {
-        padding: 75px 20px;
-    }
-
-    .projects-heading h2 {
-        font-size: 35px;
+    .projects-container {
+        grid-template-columns: 1fr;
     }
 
 
@@ -1105,6 +794,336 @@ footer {
         border-radius: 10px;
     }
 
+}
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+.projects-section {
+    background: #f5f3ee;
+    padding: 100px 25px;
+}
+
+.projects-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.projects-heading {
+    max-width: 650px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.projects-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: #111827;
+}
+
+.projects-heading h2 span {
+    color: #b08d57;
+}
+
+.projects-heading p:last-child {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* PROJECT GRID */
+
+.projects-grid {
+    display: grid;
+   grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* PROJECT CARD */
+
+.project-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e1ddd5;
+    border-radius: 10px;
+    padding: 35px 30px;
+    min-height: 390px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(17, 24, 39, 0.10);
+}
+
+
+/* PROJECT NUMBER */
+
+.project-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #d5b77a;
+    margin-bottom: 30px;
+}
+
+
+/* PROJECT CONTENT */
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-type {
+    color: #b08d57;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.project-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.project-content > p:not(.project-type) {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+
+/* PROJECT TAGS */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: auto;
+}
+
+.project-tags span {
+    padding: 6px 11px;
+    background: #f5f3ee;
+    border: 1px solid #ddd9d0;
+    border-radius: 20px;
+    color: #374151;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* PROJECT LINK */
+
+.project-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #111827;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #b08d57;
+}
+
+.coming-soon {
+    color: #9ca3af;
+    cursor: default;
+}
+
+
+/* =========================
+   PROJECTS MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .projects-section {
+        padding: 75px 20px;
+    }
+
+    .projects-heading h2 {
+        font-size: 35px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: auto;
+        padding: 30px 25px;
+    }
+
+}
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    background: #111827;
+    color: #ffffff;
+    padding: 100px 25px;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact-heading {
+    max-width: 650px;
+    margin-bottom: 60px;
+}
+
+.contact-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    line-height: 1.2;
+    margin: 12px 0 18px;
+}
+
+.contact-heading h2 span {
+    color: #d5b77a;
+}
+
+.contact-heading p:last-child {
+    color: #c4c7ce;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+/* CONTACT CONTENT */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+    align-items: start;
+}
+
+
+/* CONTACT INFO */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.contact-item > span {
+    color: #d5b77a;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.contact-item h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #bfc3ca;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* CONTACT FORM */
+
+.contact-form {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 22px;
+}
+
+.contact-form label {
+    display: block;
+    color: #111827;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    border: 1px solid #ddd9d0;
+    border-radius: 5px;
+    background: #faf9f6;
+    color: #111827;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #b08d57;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-btn {
+    border: none;
+    cursor: pointer;
+}
+
+.contact-message {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   CONTACT MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
     .contact-section {
         padding: 75px 20px;
     }
@@ -1115,35 +1134,11 @@ footer {
 
     .contact-content {
         grid-template-columns: 1fr;
-
         gap: 45px;
     }
 
 }
 
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 600px) {
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project-card {
-        min-height: auto;
-
-        padding: 30px 25px;
-    }
-
-}
-
-
-/* =========================
-   VERY SMALL MOBILE
-========================= */
 
 @media (max-width: 500px) {
 
@@ -1151,58 +1146,4 @@ footer {
         padding: 25px 20px;
     }
 
-}
-
-
-/* =========================
-   EXTRA SMALL SCREENS
-========================= */
-
-@media (max-width: 480px) {
-
-    .hero h1 {
-        font-size: 48px;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-    .hero-text {
-        font-size: 15px;
-    }
-
-    .projects-heading h2 {
-        font-size: 32px;
-    }
-
-}
-/* FINAL PROJECTS GRID FIX */
-
-.projects-grid {
-    display: grid !important;
-    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-    gap: 20px !important;
-    width: 100%;
-}
-
-.project-card {
-    width: 100%;
-    min-width: 0;
-}
-
-
-/* Tablet */
-@media (max-width: 900px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    }
-}
-
-
-/* Mobile */
-@media (max-width: 600px) {
-    .projects-grid {
-        grid-template-columns: 1fr !important;
-    }
 }
