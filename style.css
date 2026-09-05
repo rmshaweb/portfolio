@@ -84,6 +84,9 @@ header {
     color: #b08d57;
 }
 
+.hamburger {
+    display: none;
+}
 
 /* =========================
    HERO SECTION
@@ -955,23 +958,76 @@ footer {
    MOBILE RESPONSIVE
 ========================= */
 
-@media (max-width: 800px) {
+/* Navbar */
 
-    /* Navbar */
+.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+}
 
-    .navbar {
-        flex-direction: column;
+.nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
 
-        gap: 15px;
-    }
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 
-    .nav-links {
-        gap: 15px;
+    background: #f5f3ee;
 
-        flex-wrap: wrap;
+    padding: 25px 0;
 
-        justify-content: center;
-    }
+    border-bottom: 1px solid #ddd9d0;
+
+    display: none;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.hamburger {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 28px;
+    height: 21px;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background: #111827;
+
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-9.5px) rotate(-45deg);
+}
 
 
     /* Hero */
@@ -1049,7 +1105,6 @@ footer {
         flex-wrap: wrap;
     }
 
-}
 
 
 /* =========================
